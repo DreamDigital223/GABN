@@ -21,7 +21,7 @@ class decoder_controller extends Controller
         $decoders = DB::table('decoders')
         ->join('clients','decoders.client_id', '=', 'clients.id')
         ->join('decoder_types','decoders.decoder_type_id', '=', 'decoder_types.id')
-        ->select('decoders.id as id', 'decoders.Number as Number', 'clients.FirstName as FirstName', 'clients.LastName as LastName', 'decoder_types.Designation_deco as Designation_deco')
+        ->select('decoders.id as id', 'clients.phone as phone', 'decoders.Number as Number', 'clients.FirstName as FirstName', 'clients.LastName as LastName', 'decoder_types.Designation_deco as Designation_deco')
         ->get();
           
         $int=1;

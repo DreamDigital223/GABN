@@ -213,6 +213,7 @@
                                       <th >#</th>
                                       <th >N°Décodeur</th>
                                       <th >Client</th>
+                                      <th >N° Abonné</th>
                                       <th >Type de décodeur</th>
                                       <th >Actions</th>
                                     </tr>
@@ -223,6 +224,7 @@
                                        <td>  {{$int++}}<input type="hidden" class="delbtn_val" value="{{ $value->id }}"></td>
                                         <td>{{ $value->Number }}</td>
                                         <td>{{ $value->FirstName."   ".$value->LastName }}</td>
+                                        <td>{{ $value->phone }}</td>
                                         <td>{{ $value->Designation_deco }}</td>
                                         <td>
                                            <button type="button" value="{{$value->id}}" class="btn btn-info editbtn"> <i class="fas fa-edit"></i></button>
