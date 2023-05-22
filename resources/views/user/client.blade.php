@@ -104,10 +104,10 @@
                             
                         <style>
                             .mmmm {
-    background-image: -moz-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
-    background-image: -webkit-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
-    background-image: -ms-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
-}
+                                        background-image: -moz-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+                                        background-image: -webkit-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+                                        background-image: -ms-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+                                    }
                         </style>
                             <div class="table-responsive mmmm table-responsive-data2">
                                 <table class="table table-data2" id="datatable">

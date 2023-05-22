@@ -69,7 +69,7 @@
                                         <div class="form-group">
                                         <input  name="user_id" type="hidden" class="form-control" value="{{ Auth::user()->id }}"/>
                                         <input  name="shop_id_decoder" type="hidden" class="form-control" value="{{ Auth::user()->shops_id_user }}"/>
-                                       <input  name="Number" type="number" minlength="14" maxlength="18" required class="form-control cc-number identified visa"
+                                       <input  name="Number" type="number" minlength="14" maxlength="14" required class="form-control cc-number identified visa"
                                      placeholder="Numéro de Décodeur"   >
                                       </div>
                                     </div>
@@ -133,7 +133,7 @@
                                         <label for="" class="col-2"></label>
                                         <div class="col-8 text-danger">
                                         <div class="form-group">
-                                            <input  name="Number" id="Number" required minlength="14" maxlength="18" type="text" class="form-control"
+                                            <input  name="Number" id="Number" required minlength="14" maxlength="14" type="text" class="form-control"
                                      placeholder="Numéro de réabonnement*"   >
                                      </div>
                                     </div>

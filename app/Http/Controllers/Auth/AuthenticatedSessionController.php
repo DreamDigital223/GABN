@@ -28,15 +28,29 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
+        $startDate=date_create('2023-05-20');
+        $endDate=now();
+        $diffDate=date_diff($endDate,$startDate);
+        $dif=$diffDate->format("%a");
+       
+        if ($dif >30){
+            Auth::guard('web')->logout();
+
+            $request->session()->invalidate();
+                
+            $request->session()->regenerateToken();  
+            return redirect('/')->with('success', "  Désolé ! Vous n'avez plus de license");
+          }
+          else
         if ( Auth::user()->role_id==1)
             {
             return redirect("/Dashbord");
             }
         else
-                if ( Auth::user()->role_id==2)
-                {
-                    return redirect("/Dashbord");
-                }
+                    if ( Auth::user()->role_id==2)
+                    {
+                        return redirect("/Dashbord");
+                    }
         else
 
                     if ( Auth::user()->role_id==3)

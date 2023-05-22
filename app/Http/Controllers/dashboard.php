@@ -13,10 +13,7 @@ use Illuminate\Support\Facades\DB;
 class dashboard extends Controller
 {
     public function index()
-    { if (empty(Auth::user()->role_id))
-      {
-       return redirect('/');
-      }
+    { 
         $title ="Tableau | de bord";
         $shop=shop::count();
         $clients=client::count();
@@ -33,6 +30,11 @@ class dashboard extends Controller
         $CAF=DB::select('SELECT  sum(prix) as mount FROM `abonnements` a
         inner join abonnement_types t on a.abonnement_type_id=t.id'); 
         
+       if (empty(Auth::user()->role_id))
+        {
+         return redirect('/');
+        }
+        else
         
           if (Auth::user()->role_id==2)
          {

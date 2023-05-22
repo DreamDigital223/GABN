@@ -33,7 +33,7 @@
                                 <div class="col-6">
                                     <div class="form-group">
                                         <input  name="phone" id="phone" type="text" class="form-control cc-number identified visa"
-                                        placeholder="Téléphone *"   required minlength="8" maxlength="12" >
+                                        placeholder="Téléphone *"   required minlength="8" maxlength="8" >
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -96,7 +96,7 @@
                                     <div class="col-6">
                                         <div class="form-group">
                                             <input  name="phone" type="number" class="form-control cc-number identified visa"
-                                            placeholder="Téléphone *" required required minlength="8" maxlength="12"></div>
+                                            placeholder="Téléphone *" required required minlength="8" maxlength="8"></div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group">
